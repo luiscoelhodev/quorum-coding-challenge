@@ -20,7 +20,7 @@ const billsObject = billsTableLines.slice(1).map(line => {
     const values = line.split(',')
     return {
         id: values[0],
-        titles: values[1],
+        title: values[1],
         sponsor_id: values[2].replace(/\r/, '')
     }
 })

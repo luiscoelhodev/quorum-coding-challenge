@@ -1,8 +1,8 @@
-import fs from 'fs'
-import { legislatorsObject, voteResultsObject } from './table-objects'
-
 /* 1. For every legislator in the dataset, how many bills did the legislator support (voted for the bill)? 
 How many bills did the legislator oppose? */
+
+import fs from 'fs'
+import { legislatorsObject, voteResultsObject } from './table-objects'
 
 const firstTaskObject = legislatorsObject.map(legislator => {
     let legislatorSupportedBillsCount = 0
