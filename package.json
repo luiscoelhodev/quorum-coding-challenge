@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "git-commit-msg-linter": "^4.4.0",
+    "typescript": "^4.9.3"
+  },
+  "name": "quorum-coding-challenge",
+  "version": "1.0.0",
+  "description": "A application developed as a coding challenge proposed by Quorum that handles .csv files to read, query and write data and perform some tasks as requested.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Coelho",
+  "license": "MIT"
+}
