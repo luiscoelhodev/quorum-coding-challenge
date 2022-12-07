@@ -1,7 +1,7 @@
 /* 1. For every legislator in the dataset, how many bills did the legislator support (voted for the bill)? 
 How many bills did the legislator oppose? */
 
-import fs from 'fs'
+import { convertToCSV } from './helpers/convert-to-csv'
 import { legislatorsObject, voteResultsObject } from './table-objects'
 
 const firstTaskObject = legislatorsObject.map(legislator => {
@@ -20,12 +20,4 @@ const firstTaskObject = legislatorsObject.map(legislator => {
     }
 })
 
-function convertToCSV(arr: any) {
-    const array = [Object.keys(arr[0])].concat(arr)
-  
-    return array.map(it => {
-      return Object.values(it).toString()
-    }).join('\n')
-}
-
-fs.writeFileSync('./src/first-task.csv', convertToCSV(firstTaskObject), "utf-8")
+export const firstTaskCsv = convertToCSV(firstTaskObject)

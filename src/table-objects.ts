@@ -2,7 +2,7 @@ import fs from 'fs'
 
 // Legislators
 
-const legislatorsCsvTable = fs.readFileSync('./tables/legislators.csv', { encoding: 'utf8' })
+const legislatorsCsvTable = fs.readFileSync('./assets/legislators.csv', { encoding: 'utf8' })
 const legislatorsTableLines = legislatorsCsvTable.split('\n')
 const legislatorsObject = legislatorsTableLines.slice(1).map(line => {
     const values = line.split(',')
@@ -14,7 +14,7 @@ const legislatorsObject = legislatorsTableLines.slice(1).map(line => {
 
 // Bills
 
-const billsCsvTable = fs.readFileSync('./tables/bills.csv', { encoding: "utf-8" })
+const billsCsvTable = fs.readFileSync('./assets/bills.csv', { encoding: "utf-8" })
 const billsTableLines = billsCsvTable.split('\n')
 const billsObject = billsTableLines.slice(1).map(line => {
     const values = line.split(',')
@@ -27,7 +27,7 @@ const billsObject = billsTableLines.slice(1).map(line => {
 
 // Votes
 
-const votesCsvTable = fs.readFileSync('./tables/votes.csv', { encoding: "utf-8" })
+const votesCsvTable = fs.readFileSync('./assets/votes.csv', { encoding: "utf-8" })
 const votesTableLines = votesCsvTable.split('\n')
 const votesObject = votesTableLines.slice(1).map(line => {
     const values = line.split(',')
@@ -39,7 +39,7 @@ const votesObject = votesTableLines.slice(1).map(line => {
 
 // Vote_results
 
-const voteResultsCsvTable = fs.readFileSync('./tables/vote_results.csv', { encoding: "utf-8" })
+const voteResultsCsvTable = fs.readFileSync('./assets/vote_results.csv', { encoding: "utf-8" })
 const voteResultsTableLines = voteResultsCsvTable.split('\n')
 const voteResultsObject = voteResultsTableLines.slice(1).map(line => {
     const values = line.split(',')
